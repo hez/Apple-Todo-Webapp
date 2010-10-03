@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <tr>
+      <th>Cal</th>
+      <th></th>
+      <th>Priority</th>
+      <th>Due On</th>
+    </tr>
+  </thead>
+  <tbody>
+<% @todos.each do | todo | %>
+    <tr>
+      <td><%= todo.calendar %></td>
+      <td><%= todo.subject %></td>
+      <td><%= todo.priority %></td>
+      <td><%= todo.due_date %></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
